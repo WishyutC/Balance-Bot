@@ -1,0 +1,31 @@
+# Local environments and dependencies
+.venv/
+venv/
+venv3.11/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Models must be provisioned separately (see docs/SETUP.md)
+models/
+*.keras
+*.h5
+*.tflite
+# Generated conversations, recordings and build products
+logs/
+audio_output/
+audio_pcm/
+output_realtime/
+dist/
+*.log
+*.tar.gz
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+.DS_Store
