@@ -18,3 +18,7 @@ Start with [setup instructions](docs/SETUP.md), then consult the [version invent
 Only application source, dependency manifests, frontend assets, and documentation belong in Git. Virtual environments, installed packages, model weights, logs, conversation audio, build output, and the frontend tar archive are excluded by `.gitignore`. Existing local copies are preserved.
 
 The remote response service is configured in each variant's `config.py`; its implementation is not included here. Running the application requires model files, audio hardware, compatible dependencies, and access to that service. The archived variants have not been validated end to end.
+
+## Separate branches
+
+Each segment is also available on its own branch with its files at the repository root. See the [branch map](docs/BRANCHES.md) and [verification report](docs/TEST_REPORT.md). The API behavior checks found failures; these are archival snapshots, not verified working releases.
