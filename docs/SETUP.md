@@ -5,7 +5,7 @@
 Use a separate environment for each variant. Run commands from the selected variant directory: imports, model paths, and output paths assume that working directory.
 
 ```bash
-cd b_bots  # or 'b_bots(new)', b_bots_new_pkongkha, b_bot_frontend
+# Run from this branch's repository root
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -39,7 +39,7 @@ The APIs use port 3000 and expose `GET /generate`. The mood API also mounts `/au
 ## React dashboard
 
 ```bash
-cd b_bot_frontend/b_bot_app
+cd b_bot_app
 npm ci
 npm run dev
 ```
